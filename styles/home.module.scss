@@ -1,0 +1,21 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #2C2C2C;
+$second-color: #212121;
+$third-color: #ffffff;
+.container {
+  display: grid;
+  grid-template-columns: 10% 10% [feed] auto 10% 10%;
+  grid-template-rows: [component] 1fr 200px auto;
+  background-color: $primary-color;
+  grid-gap: 20px;
+  .feed {
+    position: relative;
+    grid-column-start: feed;
+    background-color: $second-color;
+    .compount {
+      grid-row-start: component;
+      background-color: $third-color;
+    } 
+  }
+}
+
