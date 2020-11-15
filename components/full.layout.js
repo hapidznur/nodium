@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Layout({ children }) {
   return (
-    <div>
+  <div class="container">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -13,9 +13,7 @@ export default function Layout({ children }) {
           content="RSS Feed"
         />
       </Head>
-      <header >
-      </header>
-      <main>{children}</main>
+    <main>{children}</main>
     </div>
   )
 }
